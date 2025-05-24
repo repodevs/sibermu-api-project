@@ -33,56 +33,55 @@ project/
 
 1. Clone Repository: 📂
 
-    ```bash
-    git clone https://github.com/repodevs/sibermu-api-project.git
-    ```
+   ```bash
+   git clone https://github.com/repodevs/sibermu-api-project.git
+   ```
 
-    ```bash
-    cd sibermu-api-project
-    ```
-
+   ```bash
+   cd sibermu-api-project
+   ```
 2. Buat `.env` file 📝
 
-    ```bash
-    cp .env.example .env
-    ```
+   ```bash
+   cp .env.example .env
+   ```
 
-    update isi dari .env jika diperlukan
-
+   update isi dari .env jika diperlukan
 3. Build and Run using Docker 🐳
 
-    ```bash
-    make buildrun
-    ```
+   ```bash
+   make buildrun
+   ```
 
-    atau
+   atau
 
-    ```bash
-    docker build -t repodevs/sibermu-api-project:latest .
-    ```
+   ```bash
+   docker build -t repodevs/sibermu-api-project:latest .
+   ```
 
-    ```bash
-    docker run -d --name apiapp -p 8002:8002 repodevs/sibermu-api-project:latest
-    ```
-
+   ```bash
+   docker run -d --name apiapp -p 8002:8002 --env-file .env repodevs/sibermu-api-project:latest
+   ```
 4. Akses 🌐
+
    - Swagger Docs: [http://localhost:8002/docs/](http://localhost:8002/docs/)
    - UI Prakiraan Cuaca: [http://localhost:8002/ui/](http://localhost:8002/ui/)
-
 5. (opsional) Hapus Docker Container 🗑️
 
-    ```bash
-    make down
-    ```
+   ```bash
+   make down
+   ```
 
-    atau
+   atau
 
-    ```bash
-    docker rm -f apiapp
-    ```
+   ```bash
+   docker rm -f apiapp
+   ```
 
 ## Endpoints 🚪
+
 User Endpoints
+
 - GET `/api/v1/users`: List users with pagination. 📋
 - POST `/api/v1/users`: Create a new user. ✍️
 - GET `/api/v1/users/{user_id}`: Retrieve a user by ID. 🔍
@@ -90,11 +89,13 @@ User Endpoints
 - DELETE `/api/v1/users/{user_id}`: Delete a user by ID. ❌
 
 ## License 📜
+
 This project is licensed under the MIT License. 🏛️
 
 ## Contributing 🤝
+
 Contributions are welcome! Please fork the repository and submit a pull request. 🚀
 
 ## Contact 📧
-For questions or support, please contact [edi20240200005@sibermu.ac.id](edi20240200005@sibermu.ac.id). 💌
 
+For questions or support, please contact [edi20240200005@sibermu.ac.id](edi20240200005@sibermu.ac.id "send email to author"). 💌
