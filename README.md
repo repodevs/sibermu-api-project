@@ -40,6 +40,7 @@ project/
    ```bash
    cd sibermu-api-project
    ```
+
 2. Buat `.env` file 📝
 
    ```bash
@@ -47,6 +48,7 @@ project/
    ```
 
    update isi dari .env jika diperlukan
+
 3. Build and Run using Docker 🐳
 
    ```bash
@@ -62,10 +64,12 @@ project/
    ```bash
    docker run -d --name apiapp -p 8002:8002 --env-file .env repodevs/sibermu-api-project:latest
    ```
+
 4. Akses 🌐
 
    - Swagger Docs: [http://localhost:8002/docs/](http://localhost:8002/docs/)
    - UI Prakiraan Cuaca: [http://localhost:8002/ui/](http://localhost:8002/ui/)
+
 5. (opsional) Hapus Docker Container 🗑️
 
    ```bash
@@ -87,6 +91,12 @@ User Endpoints
 - GET `/api/v1/users/{user_id}`: Retrieve a user by ID. 🔍
 - PATCH `/api/v1/users/{user_id}`: Update a user by ID. 🛠️
 - DELETE `/api/v1/users/{user_id}`: Delete a user by ID. ❌
+
+![Swagger Docs](./ss_swagger_docs.jpg "Swagger Docs")
+
+## UI Prakiraan Cuaca
+
+![Prakiraan Cuaca](./ss_ui_cuaca.jpg "UI Prakiraan Cuaca using TailwindCSS")
 
 ## License 📜
 
