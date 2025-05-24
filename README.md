@@ -108,4 +108,4 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## Contact 📧
 
-For questions or support, please contact [edi20240200005@sibermu.ac.id](edi20240200005@sibermu.ac.id "send email to author"). 💌
+For questions or support, please contact [edi20240200005@sibermu.ac.id](mailto:edi20240200005@sibermu.ac.id "send email to author"). 💌
