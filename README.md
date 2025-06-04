@@ -2,6 +2,11 @@
 
 Project ini adalah sebuah aplikasi berbasis FastAPI untuk mengelola pengguna. Aplikasi ini menyediakan endpoint untuk create, retrieve, update, dan delete data pengguna, serta mendukung fitur paginasi untuk daftar pengguna. Aplikasi ini juga menyediakan endpoint untuk mendapatkan data prakiraan cuaca yang diambil dari API BMKG. 🌦️
 
+## Live App 🚀
+Aplikasi Live bisa dilihat di:
+   - Swagger Docs: [https://restapi.learn.fromindonesia.id/docs/](https://restapi.learn.fromindonesia.id/docs/)
+   - UI Prakiraan Cuaca: [https://restapi.learn.fromindonesia.id/ui/](https://restapi.learn.fromindonesia.id/ui/)
+
 ## Fitur ✨
 
 - **User Management**: Create, Retrieve, Update, dan Delete data pengguna. 👤
